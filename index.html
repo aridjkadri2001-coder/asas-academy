@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>أكاديمية أساس التعليمية</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1 id="title">أكاديمية أساس التعليمية</h1>
+
+    <div class="lang">
+        <button onclick="setLang('ar')">العربية</button>
+        <button onclick="setLang('fr')">Français</button>
+        <button onclick="setLang('en')">English</button>
+    </div>
+</header>
+
+<section class="hero">
+    <h2 id="heroTitle">دروس دعم حضورية وأونلاين</h2>
+    <p id="heroDesc">تعليم احترافي لجميع المستويات</p>
+</section>
+
+<section class="form-section">
+
+<h2 id="formTitle">التسجيل</h2>
+
+<form action="https://formsubmit.co/gigiaridj5@gmail.com" method="POST">
+
+<input type="hidden" name="_captcha" value="false">
+
+<input type="text" name="name" id="name" placeholder="الاسم" required>
+<input type="text" name="lastname" id="lastname" placeholder="اللقب" required>
+<input type="tel" name="phone" id="phone" placeholder="رقم الهاتف" required>
+<input type="email" name="email" id="email" placeholder="البريد الإلكتروني" required>
+
+<select name="level" id="level" required>
+<option>ابتدائي</option>
+<option>متوسط</option>
+<option>ثانوي</option>
+<option>جامعي</option>
+</select>
+
+<select name="type" id="type" required>
+<option>حضوري</option>
+<option>أونلاين</option>
+</select>
+
+<select name="subject" id="subject" required>
+<option>العربية</option>
+<option>الإنجليزية</option>
+<option>الفرنسية</option>
+<option>الرياضيات</option>
+<option>الإعلام الآلي</option>
+</select>
+
+<textarea name="message" id="message" placeholder="ملاحظات"></textarea>
+
+<button type="submit" id="btn">إرسال</button>
+
+</form>
+
+<p id="msg"></p>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
